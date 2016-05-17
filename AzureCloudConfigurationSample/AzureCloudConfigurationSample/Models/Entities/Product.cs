@@ -11,14 +11,17 @@ namespace AzureCloudConfigurationSample.Models.Entities
 
 		[Required]
 		[StringLength(5)]
+		[Display(Name = "Product Code")]
 		public string ProductCode { get; set; }
 
 		[Required]
 		[StringLength(150)]
 		public string Description { get; set; }
 
+		[Display(Name = "Created")]
 		public DateTime CreatedDate { get; set; }
 
+		[Display(Name = "Last Modified")]
 		public DateTime LastModifiedDate { get; set; }
 	}
 }

@@ -13,6 +13,7 @@ namespace AzureCloudConfigurationSample.Models.Entities
 		public int CustomerId { get; set; }
 		public virtual Customer Customer { get; set; }
 
+		[Display(Name = "Created")]
 		public DateTime CreatedDate { get; set; }
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AzureCloudConfigurationSample.Models.Entities
@@ -14,6 +15,7 @@ namespace AzureCloudConfigurationSample.Models.Entities
 		public int ProductId { get; set; }
 		public virtual Product Product { get; set; }
 
+		[Display(Name = "Created")]
 		public DateTime CreatedDate { get; set; }
 	}
 }
